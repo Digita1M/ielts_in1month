@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS in 1 Month</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #ffffff, #f9d423);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .telegram-btn {
+            background: #0088cc;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .telegram-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background: #0077b5;
+        }
+        
+        .telegram-btn i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            margin: 5rem 0;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #ffffff, #f9d423);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        p.subtitle {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 5rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f9d423;
+        }
+        
+        .feature-card p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+            }
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            p.subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element" style="width: 100px; height: 100px; top: 20%; left: 10%;"></div>
+        <div class="floating-element" style="width: 150px; height: 150px; top: 60%; left: 80%;"></div>
+        <div class="floating-element" style="width: 200px; height: 200px; top: 30%; left: 50%;"></div>
+        <div class="floating-element" style="width: 80px; height: 80px; top: 70%; left: 20%;"></div>
+        <div class="floating-element" style="width: 120px; height: 120px; top: 10%; left: 70%;"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">IELTS_in1month</div>
+            <a href="https://t.me/ielts_in1month" class="telegram-btn" target="_blank">
+                <i class="fab fa-telegram"></i> Join Telegram
+            </a>
+        </header>
+        
+        <section class="hero">
+            <h1>Achieve IELTS Success in Just 30 Days</h1>
+            <p class="subtitle">Our intensive program is designed to help you master all four IELTS components - Listening, Reading, Writing, and Speaking - with proven strategies and daily practice.</p>
+            <a href="https://t.me/ielts_in1month" class="telegram-btn" style="margin: 0 auto; padding: 1rem 2rem; font-size: 1.2rem;" target="_blank">
+                <i class="fab fa-telegram"></i> Join Our Telegram Channel
+            </a>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <h3>Daily Lessons</h3>
+                <p>Structured daily lessons covering all IELTS sections with clear explanations and practical examples.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Expert Strategies</h3>
+                <p>Learn time-saving techniques and scoring strategies from IELTS experts with years of experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Practice Materials</h3>
+                <p>Access to high-quality practice tests and materials that mirror the actual IELTS exam.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 IELTS_in1month. All rights reserved.</p>
+    </footer>
+</body>
+</html>
